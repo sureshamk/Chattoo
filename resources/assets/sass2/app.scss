@@ -1,0 +1,127 @@
+@import './vendor/semantic';
+
+
+.ui.grid {
+    height: 100vh;
+}
+
+.ui.header {
+    color: #1a3624;
+    min-height: 62px;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+
+    .content {
+        padding-bottom: .5em;
+    }
+
+    > .icon {
+        padding-top: 0;
+        padding-bottom: .5em;
+    }
+}
+
+.ui.comments {
+    flex: 1;
+    max-width: none;
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+    overflow-y: auto;
+    background: linear-gradient(#fff 30%, #fff), linear-gradient(#fff 10px, #fff 70%) bottom, radial-gradient(at top, rgba(0, 0, 0, .1), transparent 70%), radial-gradient(at bottom, rgba(0, 0, 0, .1), transparent 70%) bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 20px, 100% 20px, 100% 10px, 100% 10px;
+    background-attachment: local, local, scroll, scroll;
+}
+
+.online-users {
+    background: linear-gradient(#fcfcfc 30%, #fcfcfc), linear-gradient(#fcfcfc 10px, #fcfcfc 70%) bottom, radial-gradient(at top, rgba(0, 0, 0, .1), transparent 70%), radial-gradient(at bottom, rgba(0, 0, 0, .1), transparent 70%) bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 20px, 100% 20px, 100% 10px, 100% 10px;
+    background-attachment: local, local, scroll, scroll;
+}
+
+.ui.input.focus input::-webkit-input-placeholder,
+.ui.input input:focus::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.ui.input.focus input::-moz-placeholder,
+.ui.input input:focus::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.ui.input.focus input::-ms-input-placeholder,
+.ui.input input:focus::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.ui.input input:focus {
+    border-color: #0b8793 !important;
+}
+
+.ui.action.input:not([class*="left action"]) input:focus {
+    border-right-color: #0b8793 !important;
+}
+
+.chat-column {
+    height: 100vh;
+    display: flex !important;
+    flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.info-column {
+    color: #fff;
+    background: linear-gradient(to bottom, #360033 10%, #0b8793 90%);
+
+    p {
+        line-height: 1.5;
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+.chat-actions {
+    padding-left: 1rem;
+}
+
+.ui.blue.button {
+    background: #0b8793;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: #0A616A;
+    }
+}
+
+.users-column {
+    height: 100vh;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background: #fcfcfc;
+}
+
+.filter-input {
+    padding: .25rem 1rem;
+    min-height: 60px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.users-list {
+    padding: 1rem 0 1rem 1rem;
+}
+
+.online-users {
+    overflow-y: auto;
+    max-height: calc(100vh - 4rem - 80px);
+
+    .item {
+        padding-right: 1rem !important;
+    }
+}

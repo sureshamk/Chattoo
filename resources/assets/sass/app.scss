@@ -1,0 +1,13 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+.info-column {
+  color: #fff;
+  background: linear-gradient(to bottom, #360033 10%, #0b8793 90%);
+}
